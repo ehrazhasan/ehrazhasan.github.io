@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Developers Community</TITLE>
+      <link rel="shortcut icon" href="IMAGES/favicon1.ico">
+      <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="CSS/Form.css">
+      <link href="CSS/bootstrap.css" rel="stylesheet" />
+      <meta charset="utf-8">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="MyApp/images/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv=X-UA-Compatible content="IE=edge">
+      <meta name=description content="This a Demo Progressive Web Application which will work in offline, has a splash screen add to home screen etc,.">
+      <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+      <meta name="theme-color" content="#0288d1">
+      <meta name="msapplication-TileColor" content="#0288d1">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <meta name="apple-mobile-web-app-title" content="Progressive Web Application">
+      <meta name="application-name" content="Progressive Web Application">
+      <link rel="apple-touch-icon" sizes="192x192" href="./image/android-icon-192x192.png">
+      <link rel="manifest" href="manifest.json">
+      
+</head>
+<body>
+
+ <header>
+  <h1 id="header-text">Developers Community</h1>
+ </header>
+ 
+ <div class="container" style="background-color: #f8f9fa; padding: 40px;">
+  <h2  id="div_text1" style="color: #495057;">Contact Information</h2>
+  <div><h2  id="div_text2" style="color: #495057; display: inline-block;">Enter your name:</h2><span id="yournamePromt" name="name_message"></span></div>
+   <div>
+    <form id="form_action"  onsubmit="checkform()" action="action.php" method="POST">
+   
+      <i class="fa fa-user fa-2x"></i><input  oninput="validateName()" class="form-control mr-sm-2" type="input" placeholder="Your name" aria-label="Search" name="user" id="yourname" required></input>
+   
+    </div>
+    <hr style="width:100%;">
+    <div><h2  id="div_text3" style="color: #495057; display: inline-block;">Email Address:</h2><span id="youremailPromt"></span></div>
+   
+    <i class="fa fa-envelope fa-2x"></i><input oninput="validateEmail()" class="form-control mr-sm-2" type="email" placeholder="Email Address" aria-label="Search" name="email" id="youremail" required>
+   
+   <hr style="width:100%;">
+   <div><h2  id="div_text4" style="color: #495057; display: inline-block;">Contact Number:</h2><span id="yournumberPromt"></span></div>
+   
+    <i class="fa fa-address-book fa-2x"></i><input  oninput="validateNumber()" id="yournumber" class="form-control mr-sm-2" type="number" placeholder="Contact Number" aria-label="Search" name="c_no" required>
+
+   <hr style="width:100%;">
+   <h1 id="div_text5">Gaming Events:</h1>
+   <label class="container"> 
+    <input type="radio" name="Game" value="radio1"> Mini Miltia
+   </label>   
+    <label class="container"> 
+    <input type="radio" name="Game" value="radio2"> Need For Speed
+   </label>   
+    <label class="container"> 
+    <input type="radio" name="Game" value="radio3"> Counter Strike
+   </label>
+  <button id="button1" onclick="validateSubmission()" class="btn btn-primary" type="submit" name="submit">SUBMIT</button> 
+  <p id="pressSubmit"></p>
+   </form> 
+     
+      
+ </div>
+ <footer class="container-fluid" style="margin-left:-15px;">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed bottom">
+  <p style="color: white;">For further information: <br>
+  ehrazhasan40@gmail.com <br>
+  swapnil-tiwari@outlook.com</p>
+  </nav>
+</footer>
+<script>
+if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+           .register('./serviceWorker.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
+
+</body>
+</html>
+<script>
+   /*  intt=document.getElementsByTagName('input')[0];
+    intt.onkeyup=function(event)
+    {
+      var asccii=event.key.toLowerCase().charCodeAt(0);
+      if(!(asccii<=122&&asccii>=97||asccii==32))
+      {
+        window.alert('Only Letters and spaces are Allowed');
+      }
+    }*/
+    function validateName()
+    {
+      var name=document.getElementById("yourname").value;
+      if (name.length==0) {
+        promt(" "+"Name is required","yournamePromt" ,"red" );
+        return false;
+      } 
+      if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/) )
+      {
+        promt(" "+"Invalid name" ,"yournamePromt","red");
+        return false;
+      }
+      
+        promt(" "+name, "yournamePromt" ,"green" );
+      return true;
+      
+      
+    }
+    function validateEmail(){
+      var email=document.getElementById("youremail").value;
+       if (email.length==0) {
+        promt(" "+"Email is required","youremailPromt" ,"red" );
+        return false;
+      } 
+      if(!email.match(/^[A-Za-z0-9\-\_\.]*[@][a-z]*[\.][a-z]{2,4}$/) )
+      {
+        promt(" "+"Invalid email" ,"youremailPromt","red");
+        return false;
+      }
+      
+        promt(" "+ email, "youremailPromt" ,"green" );
+      return true;
+
+    }
+    function validateNumber(){
+      var phone=document.getElementById("yournumber").value;
+       if (phone.length==0) {
+        promt(" "+"Phone Number is required","yournumberPromt" ,"red" );
+        return false;
+      } 
+      if(!phone.match(/^[0-9]{10}$/) )
+      {
+        promt(" "+"Invalid Phone Number" ,"yournumberPromt","red");
+        return false;
+      }
+      
+        promt(" "+ phone, "yournumberPromt" ,"green" );
+      return true;
+
+    }
+    function validateSubmission(){
+      if (!validateName()|| !validateEmail()|| !validateNumber()) {
+        promt("Please fill the form properly","pressSubmit","red");
+
+      }
+    }
+
+    function promt(message,location,color) 
+    {
+      document.getElementById(location).innerHTML= message;
+      document.getElementById(location).style.color= color;
+    }
+    function jsHide(id){
+      document.getElementById(id).style.display="none";
+    }
+    function checkform()
+    {
+      if (!validateNumber() || !validateName() || !validateEmail()) {
+        document.getElementById("button1").type="button";
+        document.getElementById("form_action").action="form.php";
+        window.alert("Form is Invalid");
+
+      }
+    }
+
+</script>

@@ -1,0 +1,52 @@
+body{
+	background-image: url("Bg.png");
+	background-size: 100% 720px;
+}
+#container_1{
+	-webkit-animation:slideIn 3s forwards;
+	background-color: #e9ecefa8;
+	height:300px;
+	max-width: 850px;
+}
+#heading_1{
+	color: #dc3545;
+	display: inline-block;
+}
+#button_1{
+	margin-top: 60px;
+	cursor: pointer;
+	border-right: 40%;
+	border:1px solid #1b1e21;
+	vertical align=middle;
+
+}
+#anchor_1{
+	color: white;
+	text-decoration: none;
+
+}
+#anchor_1:hover{
+	color: black;
+}
+#para_1{
+	margin-top: 0px;
+	color: #ff0000cf;
+	text-align: justify;
+	font-size: 20px;
+	font-family:verdana;
+
+}
+#img_1{
+	display: initial;
+	height: 30px;
+	width: 30px;
+	margin-top: -22px;
+}
+@-webkit-keyframes slideIn {
+	from{ margin-top: 0%; }
+	to{ margin-top:  5%; }
+}
+@-moz-keyframes slideIn {
+	from{ margin-top: 0%; }
+	to{ margin-top:  5%; }
+}

@@ -1,0 +1,62 @@
+body{
+	background-image: url("Bg.png");
+	background-size: 100% 720px;
+}
+#header-text{
+	color: rgb(0, 123, 255);
+	font-family: courier new;
+	text-align: center;
+	font-size: 350%;
+
+}
+header{
+	background-color: #171B17; 
+	margin-top: 0px;
+	padding: 30px;
+}
+#div_text1{
+	text-align: center;
+	font-size: 1.8rem;
+	font-family:Verdana;
+	margin-top: -20px;
+}
+.fa{
+	float: left;
+}
+#div_text2{
+	margin-top: 30px;
+}
+#div_text5{
+	font-size: 1.7rem;
+}
+p{
+	margin-left: 10px;
+}
+#button1{
+	border: 1px 1px solid;
+	margin-left: 40%;
+	cursor: pointer; 
+}
+@media screen and (max-width: 480px){
+	.fa{
+		position: absolute;
+	}
+	#yourname{
+		margin-left: 29px;
+		width: 90%;
+		margin-right: auto;
+	}
+	#youremail{
+		margin-left: 34px;
+		width: 90%;
+		margin-right: auto;
+	}
+	#yournumber{
+		margin-left: 34px;
+		width: 90%;
+		margin-right: auto;
+	}
+	hr{
+		width: auto;
+	}
+}

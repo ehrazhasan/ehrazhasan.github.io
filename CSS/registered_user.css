@@ -1,0 +1,93 @@
+body{
+	background-image: url("Bg.png");
+	background-size: 100% 720px;
+}
+#container_1{
+	background-color: #e9ecefa8;
+	height:auto;
+	max-width:650px;
+	border:1px solid #007bff;
+	padding-bottom: 20px;
+	position: relative;
+
+}
+#header-text{
+	color: rgb(0, 123, 255);
+	font-family: courier new;
+	text-align: center;
+	font-size: 350%;
+}
+header{
+	background-color: #171B17; 
+	margin-top: 0px;
+	padding: 30px;
+	position: relative;
+}
+#heading_1{
+	text-align: center;
+	font-size: 60px;
+}
+#heading_1-1{
+	font-family:calibri;
+	margin-top: 90px;
+	font-size: 35px;
+	color: #155724;
+}
+#heading_2{
+	font-size: 30px;
+	text-align: center;
+	font-family: calibri;
+}
+#heading_3{
+	font-size: 25px;
+	color: #155724;
+    font-family:calibri;
+}
+#img_1{
+	width:200px;
+	height: 150px;
+	border:1px solid black;
+}
+#img_2{
+	width:200px;
+	height: 150px;
+	border:1px solid black;
+}
+#img_3{
+	width:200px;
+	height: 150px;
+	border:1px solid black;
+}
+#figure_1{
+	margin-top: 20px;
+	padding: initial;
+}
+#button_1{
+	margin-top: auto;
+	cursor: pointer;
+	border-right: 40%;
+	border:1px solid #004085;
+}
+#anchor_1{
+	color: white;
+	text-decoration: none;
+
+}
+#figure_2{
+        height:20px;
+}
+#img_4{
+	height: 90px;
+	margin-top: 20px;
+}
+#anchor_1:hover{
+	color: black;
+}
+@media screen and (max-width:480px){
+	#container_1{
+	height:auto;
+	}
+
+
+
+}
