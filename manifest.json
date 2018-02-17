@@ -1,9 +1,9 @@
 {
-  "name": "Develop",
-  "short_name": "DC",
+  "name": "Developers-Community",
+  "short_name": "Dev-Comm",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "start_url": "form.php",
+  "start_url": "https://ehrazhasan.github.io/form.html",
   "display": "standalone",
   "orientation": "portrait",
   "description": "Pithy description (132 characters or less, no HTML)",
