@@ -6,7 +6,7 @@ var cacheName = 'cache-v4';
 //Files to save in cache
 var files = [
   './',
-  './form.php', //SW treats query string as new request
+  'https://ehrazhasan.github.io/form.html', //SW treats query string as new request
   'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700', //caching 3rd party content
   './CSS/Form.css',
   './image/android-icon-192x192.png',
