@@ -9,19 +9,40 @@
 
 	<meta name="theme-color" content="#2f2f2f">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.bg
+		{
+			height: 100vh;
+			width: 100%;
+			margin-top: -20px;
+			z-index: -1;
+		}
+		.main-cont
+		{
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.85);
+			z-index: +1;
+			position: absolute;
+			top: 0;
+		}
+		.main-cont-2
+		{
+			height: 100%;
+			width: 100%;
+			background:linear-gradient(to bottom right,rgba(248, 40, 90,0.8), rgba(205,0, 0, 0.8));
+			z-index: +1;
+			position: absolute;
+			top: 0;
+		}
+	</style>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 	<div class="split left">
+		<img src="images/black1.jpg" class="bg">
+		<div class="main-cont">
 		  <div class="centered">
 		    <img src="images/002.jpg" alt="Ehraz Hasan">
 		    <br><br>
@@ -33,27 +54,44 @@
 
 		    <a href="https://www.facebook.com/ehraz.hasan" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/_ehrazhasan_/" class="fa fa-instagram"></a>
+
+
 		  </div>
+		</div>
     </div>
 
 	<div class="split right">
-	  <div class="centered anim">
-	    <h1 id="aboutme">About me</h1>
-	    <p id="para-me">Hi! I am Ehraz Hasan pursuing B.tech with Computer Science. I am a full stack web developer. I have designed websites using PHP technology and currently working on different platforms.</p>
-	    <br>
-	    <h1 id="myprojects">My Projects</h1>
-	    <p>Here are links to my completed projects.</p>
-	    <a href="alf.epizy.com/alf"><img id="alf" src="images/alf.png"></a>
-	    <a href="http://ebillie.epizy.com/Ebillie/pages/index.php"><img id="alf" src="images/bill.png"></a>
-	    <a href="http://developers-community.000webhostapp.com/developers-community/form.php"><img id="alf" src="images/dev.png"></a>
+		<img src="images/red.jpg" class="bg">
 
-	  </div>
-	  <footer>
-	  	<h5>Want to design your website ?</h5><br>
-	  	Contact : 8318100759 <br>
-	  	Email : ehraz_hasan@outlook.com
-	  </footer>
+		<div class="main-cont-2">
+		  <div class="centered anim">
+		    <h1 id="aboutme">About me</h1>
+		    <p id="para-me">Hi! I am Ehraz Hasan pursuing B.tech with Computer Science. I am a full stack web developer. I have designed websites using PHP technology and currently working on different platforms.</p>
+		    <br>
+		    <h1 id="myprojects">My Projects</h1>
+		    <p>Here are links to my completed projects.</p>
+		    <a href="alf.epizy.com/alf"><img id="alf" src="images/alf.png"></a>
+		    <a href="http://ebillie.epizy.com/Ebillie/pages/index.php"><img id="alf" src="images/bill.png"></a>
+		    <a href="http://developers-community.000webhostapp.com/developers-community/form.php"><img id="alf" src="images/dev.png"></a>
+
+		  </div>
+		  <footer>
+		  	<h5>Want to design your website ?</h5><br>
+		  	Contact : 8318100759 <br>
+		  	Email : ehraz_hasan@outlook.com
+		  </footer>
+		  </div>
 	</div>
 
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -16,22 +16,12 @@ body {
 .left {
     left: 0;
     background-color: #111;
-    background-image: url("../images/black1.jpg") !important;
-    background-repeat: no-repeat;
-    background-size: cover;
     filter: blur(0px);
-    opacity: 0.9;
 }
 
 .right {
     right: 0;
     /* background-color: #f50707;*/
-    background-image: url("../images/red.jpg") !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(0px);
-    opacity: 0.9;
-   
 }
 #h1{
     font-family: Arial;
