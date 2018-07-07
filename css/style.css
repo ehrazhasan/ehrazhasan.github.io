@@ -22,6 +22,13 @@ body {
     right: 0;
     background-color: #f50707;
 }
+#h1{
+    font-family: Arial;
+    color:#ffffff;
+    width: 6em;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
 
 .centered {
     position: absolute;
@@ -54,10 +61,7 @@ body {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-#h1{
-    font-family: Arial;
-    color:#ffffff;
-}
+
 #paragraph{
     font-family: Arial;
     color: white;
@@ -107,6 +111,22 @@ footer{
     font-weight: bold;
     text-align: left;
 }
+.anim{
+   -webkit-animation: mymove 2s ease-in;
+   -ms-animation: mymove 2s ease-in;
+   animation: mymove 2s ease-in;
+}
+@-webkit-keyframes mymove{
+
+    from{left:40%;}
+    to{left: 50%;}
+}
+@keyframes mymove{
+
+    from{left:40%;}
+    to{left: 50%;}
+}
+
 @media only screen and (max-width: 480px){
 
     #h1{
