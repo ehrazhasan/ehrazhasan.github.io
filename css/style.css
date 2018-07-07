@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    color: white;
+    color: #ffffff;
 }
 
 .split {
@@ -16,11 +16,22 @@ body {
 .left {
     left: 0;
     background-color: #111;
+    background-image: url("../images/black1.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0px);
+    opacity: 0.9;
 }
 
 .right {
     right: 0;
-    background-color: #f50707;
+    /* background-color: #f50707;*/
+    background-image: url("../images/red.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0px);
+    opacity: 0.9;
+   
 }
 #h1{
     font-family: Arial;
@@ -36,6 +47,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: #ffffff;
 }
 
 .centered > img {
@@ -64,7 +76,7 @@ body {
 
 #paragraph{
     font-family: Arial;
-    color: white;
+    color: #ffffff;
 }
 .fa {
   padding: 15px;
@@ -107,9 +119,9 @@ footer{
     position: absolute;
     bottom: 0;
     padding: 5px;
-    color: #111;
     font-weight: bold;
     text-align: left;
+    color: #ffffff;
 }
 .anim{
    -webkit-animation: mymove 2s ease-in;
